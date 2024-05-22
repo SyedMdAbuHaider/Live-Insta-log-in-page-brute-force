@@ -6,6 +6,12 @@
 ## Installation Process
 To install the tool, follow these steps:
 
+0. Begin by installing a package:
+    ```bash
+    $ pip install pyautogui
+
+    ```
+
 1. Begin by cloning the repository:
     ```bash
     $ git clone https://github.com/MichaelDim02/Narthex.git && cd Narthex
