@@ -45,7 +45,7 @@ To install the tool, follow these steps:
     $ python code.py passlist.py
     ```
 ## N.B:
--after running the script you have to switch to the Instagram login page within 5 seconds you have to point your cursor in the password box by clicking the left key on the mouse and before that you have to write the username at the specific box this tool is just for password attack.
+after running the script you have to switch to the Instagram login page within 5 seconds you have to point your cursor in the password box by clicking the left key on the mouse and before that, you have to write the username at the specific box this tool is just for password attack.
 
 
 ## Features
