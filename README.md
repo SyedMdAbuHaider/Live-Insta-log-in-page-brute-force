@@ -29,7 +29,7 @@ To install the tool, follow these steps:
 
 4. Run the tool:
     ```bash
-    $ Narthex
+    $ nwiz
     ```
 
     This will initiate the tool, prompting you to answer various questions.
