@@ -1,4 +1,4 @@
-# Live-Insta-log-in-page-brute-force
+# Live Instagram log-in page brute-force
 
 ## Overview
 **Live-Insta-log-in-page-brute-force** is a potent tool specifically designed to assess the security integrity of Instagram login pages through brute-force attacks. However, it's imperative to understand that gaining unauthorized access to accounts is illegal. This tool should only be utilized for educational purposes or with explicit permission.
